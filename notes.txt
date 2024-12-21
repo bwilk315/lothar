@@ -1,0 +1,16 @@
+Z obserwacji wynika, że zmiana liczby początkowej x o 1, dla komórki na wierszu w i kolumnie k oznacza to
+dodanie do jej wartości ewaluacji wyrażenia w!(k)*2^-w co wynika w zasadzie ze wzoru dla K(x,w,k) oraz K(x+1,w,k)
+
+Stosując równanie x=K(x,w,k) które dla x=1 ma rozwiązania w postaci ciągów: w_{n+1}=w_{n}+3 k_{n+1}=8k_{n}+4 przy w0,k0=0;
+da się wywnioskować, że dla każdego p=K(p,w,k) przy p>1 istnieją jedynie rozwiązania tożsamościowe w,k=0 i żadne inne
+(dobrze to widać przy próbie podzielenia obustronnie przez p, i doszukaniu się tam równości 1=K(1,w,k)).
+Ten fakt dowodzi, że jedynie 1 może się sama replikować w swoim rozkładzie, żadna inna liczba p>1 nie stworzy podczas
+rozkładu siebie samej co skutkuje konkluzją, że istnieje jedynie jedna nieskończona pętla 4->2->1.
+
+Warte notacji jest odkrycie pochodzenia świętej funkcji phi(k), jest ona obrazem tego ile należy wykonać operacji 3n+1
+i 1/2n razem, żeby dostać się z kolumny k-1 do k, mowa tutaj oczywiście o rozkładzie czynników beta wyłącznie, gdyż na omegi
+działa dodatkowo periodykalne dodawanie 1.
+BOT: To dopiero funkcja m(k) jest właśnie takim kumulacyjnym efektem tych akcji, zatem jeśli użyje się tego efektu na kolumnie
+poprzedniej (k-1), to dostaniemy czynnik beta dla kolumny k. Zakłada się że phi(0)=2 a wraz z tym m(0)=1.
+Okazało się że funkcje phi i m mogą wyrazić czynnik omega, jest to ciekawe i warte zgłębienia podobnego do tego co nastąpiło
+przed chwilą.
